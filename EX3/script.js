@@ -7,7 +7,7 @@ let naoTrabalhando = []
 let continua = true
 
 
-while(continua){
+function criarPessoa (){
     let nome = prompt("Qual é o seu nome ?")
     let idade = Number(prompt("Qual é sua idade?"))
     let emprego = confirm("Você esta trabalhando ? S - Sim N - Não")
@@ -41,10 +41,18 @@ while(continua){
     
 
     }
-
+    
     continua = confirm("Você quer continuar cadastrando? S - Sim N - Não")
 
+    return 
+
 }
+
+
+while(continua){
+    criarPessoa()
+}
+
 
 
 console.log(trabalhandoMais2500)
